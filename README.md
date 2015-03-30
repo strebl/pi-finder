@@ -1,3 +1,21 @@
+## Installation
+
+#### 1. Download the pi-finder-daemon
+```sh
+$ mkdir pi-finder-daemon && curl -sSL https://github.com/strebl/pi-finder-daemon/tarball/master | tar xzC pi-finder-daemon --strip-components=1 && cd pi-finder-daemon
+```
+
+#### 2. Install dependencies
+```sh
+$ sudo ln -s /usr/bin/nodejs /usr/bin/node
+$ npm install
+```
+
+#### 3. Start the Daemon
+```sh
+$ pi-finder-daemon/bin/pi-finder-daemon
+```
+
 ## Usage
 **Note:** This is just temporary! Better solution will follow soon(tm)!
 
