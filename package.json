@@ -24,6 +24,7 @@
   "homepage": "https://github.com/strebl/pi-finder-daemon",
   "dependencies": {
     "daemon": "^1.1.0",
+    "getmac": "^1.0.7",
     "ip-monitor": "https://github.com/strebl/ip-monitor/tarball/master",
     "request": "^2.54.0"
   }
