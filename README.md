@@ -1,5 +1,5 @@
 ## Usage
-**Note:** This is just temprary! Better solution soon(tm)!
+**Note:** This is just temporary! Better solution will follow soon(tm)!
 
 #### Start the daemon
 Run the pi-finder-daemon
