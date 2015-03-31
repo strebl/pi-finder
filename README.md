@@ -11,9 +11,36 @@ $ sudo ln -s /usr/bin/nodejs /usr/bin/node
 $ npm install
 ```
 
-#### 3. Start the Daemon
+#### 3. Configuration
+Open config.js an change the name from `My Awesome Pi` to a name you'll recognise.
+```js
+module.exports = {
+	// ...
+	name: "Manuel's Pi",
+	// ...
+}
+```
+
+#### 4. Start the Daemon
 ```sh
 $ pi-finder-daemon/bin/pi-finder-daemon
+```
+
+#### 5. Start on system boot
+To add the daemon to the system startup open rc.local
+```sh
+$ sudo nano /etc/rc.local
+```
+And add these two lines **BEFORE `exit 0`**:
+```sh
+# Start Pi Finder
+/home/pi/pi-finder-daemon/bin/pi-finder-daemon
+```
+
+#### 6. Reboot
+Now you can reboot your Pi
+```sh
+$ sudo reboot
 ```
 
 ## Usage
