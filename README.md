@@ -1,5 +1,4 @@
-
-![Pi Finder Overview](http://i.imgur.com/h9QasUC.png)
+[![Pi Finder Overview](http://i.imgur.com/h9QasUC.png)](https://pi.strebl.ch)
 
 ## Before you start :
 Be sure that you have **nodejs** installed!
@@ -46,7 +45,7 @@ $ sudo /etc/init.d/pi-finder-daemon start
 ```
 
 #### 6. Reboot (optional)
-To test the configuration, restart your Pi and check the website!
+To test the configuration, restart your Pi and check the [website](https://pi.strebl.ch)!
 ```sh
 $ sudo reboot
 ```
