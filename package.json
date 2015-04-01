@@ -1,14 +1,14 @@
 {
-  "name": "pi-finder-daemon",
-  "version": "0.1.0",
-  "description": "Raspberry Pi Finder Daemon",
+  "name": "pi-finder",
+  "version": "0.2.0",
+  "description": "Raspberry Pi Finder",
   "main": "lib/app.js",
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/strebl/pi-finder-daemon"
+    "url": "https://github.com/strebl/pi-finder"
   },
   "keywords": [
     "Raspberry",
@@ -19,9 +19,9 @@
   "author": "Manuel Strebel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/strebl/pi-finder-daemon/issues"
+    "url": "https://github.com/strebl/pi-finder/issues"
   },
-  "homepage": "https://github.com/strebl/pi-finder-daemon",
+  "homepage": "https://github.com/strebl/pi-finder",
   "dependencies": {
     "daemon": "^1.1.0",
     "getmac": "^1.0.7",
