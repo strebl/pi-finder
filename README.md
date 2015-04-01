@@ -1,3 +1,14 @@
+
+![Pi Finder Overview](http://i.imgur.com/h9QasUC.png)
+
+## Before you start :
+Be sure that you have **nodejs** installed!
+
+If you don't, just run following command:
+```sh
+$ sudo apt-get install -y nodejs
+```
+
 ## Installation
 
 #### 1. Download the pi-finder-daemon
@@ -21,79 +32,43 @@ module.exports = {
 }
 ```
 
-#### 4. Start the Daemon
+#### 4. Start on system boot
+Add the pi finder to the start up
 ```sh
-$ pi-finder-daemon/bin/pi-finder-daemon
+$ sudo mv init/pi-finder-daemon /etc/init.d/
+$ sudo update-rc.d pi-finder-daemon defaults
 ```
 
-#### 5. Start on system boot
-To add the daemon to the system startup open rc.local
+#### 5. Start daemon
+Add the pi finder to the start up
 ```sh
-$ sudo nano /etc/rc.local
-```
-And add these two lines **BEFORE `exit 0`**:
-```sh
-# Start Pi Finder
-/home/pi/pi-finder-daemon/bin/pi-finder-daemon
+$ sudo /etc/init.d/pi-finder-daemon start
 ```
 
-#### 6. Reboot
-Now you can reboot your Pi
+#### 6. Reboot (optional)
+To test the configuration, restart your Pi and check the website!
 ```sh
 $ sudo reboot
 ```
 
 ## Usage
-**Note:** This is just temporary! Better solution will follow soon(tm)!
 
 #### Start the daemon
-Run the pi-finder-daemon
 ```sh
-$ cd /path/to/pi-finder-daemon
-$ ./pi-finder-daemon
-```
-
-#### Start the daemon
-Run the pi-finder-daemon
-```sh
-$ cd /path/to/pi-finder-daemon
-$ ./pi-finder-daemon
+$ sudo service pi-finder-daemon start 
 ```
 
 #### Stop the daemon
-First you need the PID
 ```sh
-$ ps -axf | grep pi-finder-daemon
-```
-
-You'll get something like this:
-```
-501 37818     1   0   ...pi-finder-daemon...
-501 41226 37818   0   ...pi-finder-daemon...
-```
-
-The PID **37818** is the one we are looking for in this case.
-
-Now you can gracefully shutdown the daemon:
-```sh
-$ kill -TERM 37818 # (replace 37818 with your daemon PID)
+$ sudo service pi-finder-daemon stop 
 ```
 
 #### Restart the daemon
-First you need the PID
 ```sh
-$ ps -axf | grep pi-finder-daemon
+$ sudo service pi-finder-daemon restart 
 ```
 
-You'll get something like this:
-```
-501 37818     1   0   ...pi-finder-daemon...
-501 41226 37818   0   ...pi-finder-daemon...
-```
-
-The PID **37818** is the one we are looking for in this case.
-
-Now you can gracefully shutdown the daemon:
+#### Status of the daemon
 ```sh
-$ kill -HUP 37818 # (replace 37818 with your daemon PID)
+$ sudo service pi-finder-daemon status 
 ```
