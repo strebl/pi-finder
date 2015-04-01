@@ -1,14 +1,19 @@
-[![Pi Finder Overview](http://i.imgur.com/h9QasUC.png)](https://pi.strebl.ch)
+# Pi Finder
+[![Pi Finder Overview](http://i.imgur.com/h9QasUC.png)](https://pi.strebl.ch "Visit the Pi Finder Website!")
 
-## Before you start :
+## Description
+
+This is a little helper to find your Raspberry Pi in a DHCP network.
+
+## Installation
+
+### Before you start :
 Be sure that you have **nodejs** installed!
 
 If you don't, just run following command:
 ```sh
 $ sudo apt-get install -y nodejs
 ```
-
-## Installation
 
 #### 1. Download the pi-finder-daemon
 ```sh
@@ -45,7 +50,7 @@ $ sudo /etc/init.d/pi-finder-daemon start
 ```
 
 #### 6. Reboot (optional)
-To test the configuration, restart your Pi and check the [website](https://pi.strebl.ch)!
+To test the configuration, restart your Pi and check the [Pi Finder](https://pi.strebl.ch)!
 ```sh
 $ sudo reboot
 ```
