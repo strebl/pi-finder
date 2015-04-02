@@ -33,3 +33,6 @@ echo "Chaning init script permissions"
 # Update rc.d
 echo "Updating rc.d"
 #update-rc.d pi-finder defaults
+
+echo "Before you continue, change the name in the config."
+echo "Run nano /usr/local/lib/node_modules/pi-finder/config.js"
