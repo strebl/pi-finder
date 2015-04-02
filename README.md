@@ -6,13 +6,14 @@
 This is a little helper to find your Raspberry Pi in a DHCP network.
 
 ## Installation
+**You need to run all these commands on your Rasberry Pi.**
 
-#### 1. Download the Pi Finder
+#### 1. Run the installer
 ```bash
 $ sudo wget http://bit.ly/pi-finder_installer -O - | sh
 ```
 
-#### 2. Configuration
+#### 2. Configure
 Open the configuration file `config.js`...
 ```bash
 $ nano /usr/local/lib/node_modules/pi-finder/config.js
