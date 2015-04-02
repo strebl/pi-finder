@@ -49,7 +49,7 @@ echo "Updating rc.d"
 update-rc.d pi-finder defaults
 
 echo
-echo -e "${FBLE}Before you continue, change the name attribute in the config!${RS}"
+echo "${FBLE}Before you continue, change the name attribute in the config!${RS}"
 echo
-echo -e "${FGRN}Run sudo nano $packagepath/config.js${RS}"
+echo "${FGRN}Run sudo nano $packagepath/config.js${RS}"
 echo
