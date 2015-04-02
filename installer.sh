@@ -50,6 +50,5 @@ update-rc.d pi-finder defaults
 
 echo
 echo "${FBLE}Before you continue, change the name attribute in the config!${RS}"
-echo
 echo "${FGRN}Run sudo nano $packagepath/config.js${RS}"
 echo
