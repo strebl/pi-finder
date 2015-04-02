@@ -24,7 +24,7 @@ packagepath="/usr/local/lib/node_modules/pi-finder"
 
 # Move to init.d
 echo "Moving init script"
-mv "$packagepath/init/pi-finder /etc/init.d/"
+mv "$packagepath/init/pi-finder /etc/init.d/pi-finder"
 
 # Change permissions
 echo "Chaning init script permissions"
