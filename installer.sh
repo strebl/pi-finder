@@ -27,8 +27,9 @@ fi
 echo "Installing pi-finder with npm"
 npm install -g https://github.com/strebl/pi-finder/tarball/master
 
-# Get the paths 	# To extact the node path: nodepath=$(npm config get prefix)
-packagepath="/usr/local/lib/node_modules/pi-finder"
+# Get the paths
+nodejsdir=$(npm config get prefix)
+packagepath="$nodejsdir/lib/node_modules/pi-finder"
 
 # Move to init.d
 echo "Moving init script"
@@ -43,4 +44,4 @@ echo "Updating rc.d"
 update-rc.d pi-finder defaults
 
 echo "Before you continue, change the name attribute in the config!"
-echo "Run nano /usr/local/lib/node_modules/pi-finder/config.js"
+echo "Run nano $packagepath/config.js"

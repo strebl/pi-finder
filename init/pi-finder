@@ -9,7 +9,8 @@
 # Description:       Enable service provided by pi-finder.
 ### END INIT INFO
 
-dir="/usr/local/lib/node_modules/pi-finder"
+nodejsdir=$(npm config get prefix)
+dir="$nodejsdir/lib/node_modules/pi-finder"
 user="pi"
 cmd="node lib/app.js"
 
