@@ -3,9 +3,17 @@
 # Update sources
 apt-get update
 
+# Install curl
+echo "Installing curl"
+apt-get install curl
+
+# Add Node.js sources
+echo "Adding Node.js sources"
+curl -sL https://deb.nodesource.com/setup | bash -
+
 # Install Node.js
 echo "Installing Node.js"
-apt-get install -y nodejs npm
+apt-get install -y nodejs
 
 
 # Create symlink if needed
