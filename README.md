@@ -1,4 +1,4 @@
-# Pi Finder
+# Pi Finder [![Dependency Status](https://david-dm.org/strebl/pi-finder.svg)](https://david-dm.org/strebl/pi-finder)
 [![Pi Finder Overview](http://i.imgur.com/h9QasUC.png)](https://pi.strebl.ch "Visit the Pi Finder Website!")
 
 ## Description
