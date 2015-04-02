@@ -7,13 +7,18 @@ This is a little helper to find your Raspberry Pi in a DHCP network.
 
 ## Installation
 
-#### 1. Download the pi-finder
+#### 1. Download the Pi Finder
 ```bash
-$ sudo wget https://raw.githubusercontent.com/strebl/pi-finder/master/installer.sh -O - | sh
+$ sudo wget http://bit.ly/pi-finder_installer -O - | sh
 ```
 
-#### 3. Configuration
-Open config.js an change the name from `My Awesome Pi` to a name you'll recognise.
+#### 2. Configuration
+Open the configuration file `config.js`...
+```bash
+$ nano /usr/local/lib/node_modules/pi-finder/config.js
+```
+
+...and change the name from `My Awesome Pi` to a name you'll recognise.
 ```js
 module.exports = {
 	// ...
@@ -22,20 +27,13 @@ module.exports = {
 }
 ```
 
-#### 4. Start on system boot
+#### 3. Start Pi Finder
 Add the pi finder to the start up
 ```bash
-$ sudo mv init/pi-finder-daemon /etc/init.d/
-$ sudo update-rc.d pi-finder-daemon defaults
+$ sudo /etc/init.d/pi-finder start
 ```
 
-#### 5. Start daemon
-Add the pi finder to the start up
-```bash
-$ sudo /etc/init.d/pi-finder-daemon start
-```
-
-#### 6. Reboot (optional)
+#### 4. Reboot (optional)
 To test the configuration, restart your Pi and check the [Pi Finder](https://pi.strebl.ch)!
 ```bash
 $ sudo reboot
@@ -43,22 +41,22 @@ $ sudo reboot
 
 ## Usage
 
-#### Start the daemon
+#### Start Pi Finder
 ```bash
-$ sudo service pi-finder-daemon start 
+$ sudo service pi-finder start 
 ```
 
-#### Stop the daemon
+#### Stop Pi Finder
 ```bash
-$ sudo service pi-finder-daemon stop 
+$ sudo service pi-finder stop 
 ```
 
-#### Restart the daemon
+#### Restart Pi Finder
 ```bash
-$ sudo service pi-finder-daemon restart 
+$ sudo service pi-finder restart 
 ```
 
-#### Status of the daemon
+#### Status of the Pi Finder
 ```bash
-$ sudo service pi-finder-daemon status 
+$ sudo service pi-finder status 
 ```
