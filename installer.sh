@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# Declare colors
+RS="\033[0m"    # reset
+FGRN="\033[01;32m" # foreground green
+FBLE="\033[01;34m" # foreground blue
+
 # Update sources
 apt-get update
 
@@ -43,5 +48,8 @@ chmod 755 /etc/init.d/pi-finder
 echo "Updating rc.d"
 update-rc.d pi-finder defaults
 
-echo "Before you continue, change the name attribute in the config!"
-echo "Run nano $packagepath/config.js"
+echo
+echo -e "${FBLE}Before you continue, change the name attribute in the config!${RS}"
+echo
+echo -e "${FGRN}Run sudo nano $packagepath/config.js${RS}"
+echo
