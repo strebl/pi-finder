@@ -5,7 +5,7 @@ apt-get update
 
 # Install Node.js
 echo "Installing Node.js"
-apt-get install -y nodejs
+apt-get install -y nodejs npm
 
 
 # Create symlink if needed
