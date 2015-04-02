@@ -7,23 +7,9 @@ This is a little helper to find your Raspberry Pi in a DHCP network.
 
 ## Installation
 
-### Before you start :
-Be sure that you have **nodejs** installed!
-
-If you don't, just run following command:
+#### 1. Download the pi-finder
 ```bash
-$ sudo apt-get install -y nodejs
-```
-
-#### 1. Download the pi-finder-daemon
-```bash
-$ mkdir pi-finder-daemon && curl -sSL https://github.com/strebl/pi-finder-daemon/tarball/master | tar xzC pi-finder-daemon --strip-components=1 && cd pi-finder-daemon
-```
-
-#### 2. Install dependencies
-```bash
-$ sudo ln -s /usr/bin/nodejs /usr/bin/node
-$ npm install
+$ sudo wget https://raw.githubusercontent.com/strebl/pi-finder/master/installer.sh -O - | sh
 ```
 
 #### 3. Configuration

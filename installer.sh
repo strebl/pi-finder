@@ -9,7 +9,7 @@ echo "Installing Node.js"
 
 
 # Create symlink if needed
-if [ -e /usr/bin/nodejs && ! -e /usr/bin/node ]
+if [ -e /usr/bin/nodejs ] && [ ! -e /usr/bin/node ]
   then
   	echo "Creating symlink"
     #ln -s /usr/bin/nodejs /usr/bin/node
