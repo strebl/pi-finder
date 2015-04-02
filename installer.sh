@@ -33,7 +33,7 @@ packagepath="$nodejsdir/lib/node_modules/pi-finder"
 
 # Move to init.d
 echo "Moving init script"
-mv "$packagepath/init/pi-finder /etc/init.d/pi-finder"
+mv "$packagepath/init/pi-finder /etc/init.d/"
 
 # Change permissions
 echo "Chaning init script permissions"
