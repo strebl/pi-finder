@@ -20,7 +20,7 @@ $ sudo nano /usr/lib/node_modules/pi-finder/config.js
 ```
 
 ...and change the name from `My Awesome Pi` to a name you'll recognise.
-```js
+```javascript
 module.exports = {
 	// ...
 	name: "Manuel's Pi",
