@@ -31,7 +31,7 @@ module.exports = {
 #### 3. Start Pi Finder
 Add the pi finder to the start up
 ```bash
-$ sudo /etc/init.d/pi-finder start
+$ sudo service pi-finder start
 ```
 
 #### 4. Reboot (optional)
