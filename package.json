@@ -1,6 +1,6 @@
 {
   "name": "pi-finder",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Raspberry Pi Finder",
   "main": "lib/app.js",
   "scripts": {
