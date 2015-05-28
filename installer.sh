@@ -2,8 +2,15 @@
 
 # Declare colors
 RS="\033[0m"    # reset
+FGRD="\033[01;31m" # foreground red
 FGRN="\033[01;32m" # foreground green
 FBLE="\033[01;34m" # foreground blue
+
+# Make sure only root can run our script
+if [[ $EUID -ne 0 ]]; then
+	echo -e "${FGRD}The pi-finder installer must be run as root!${RS}" 1>&2
+	exit 1
+fi
 
 # Update sources
 apt-get update
