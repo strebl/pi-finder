@@ -38,7 +38,7 @@
 
 	# Install pi-finder
 	echo "Installing pi-finder with npm"
-	npm install -g https://github.com/strebl/pi-finder/tarball/master
+	npm install -g pi-finder
 
 	# Get the paths
 	nodejsdir=$(npm config get prefix)
