@@ -11,7 +11,7 @@
 
 nodejsdir=$(npm config get prefix)
 dir="$nodejsdir/lib/node_modules/pi-finder"
-user="pi"
+user="pi-finder"
 cmd="node lib/app.js"
 
 name=`basename $0`
