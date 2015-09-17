@@ -62,6 +62,9 @@
 		echo "Chaning init script permissions"
 		chmod 755 /etc/init.d/pi-finder
 
+		# Create service user
+		id -u "pi-finder" &>/dev/null || useradd -r -s /bin/false pi-finder
+
 		# Update rc.d
 		echo "Updating rc.d"
 		update-rc.d pi-finder defaults
@@ -69,9 +72,6 @@
 		echo -e "${FGRD}Your OS is not supported.${RS}"
 		echo -e "${FGRD}Please create a new issue: https://github.com/strebl/pi-finder/issues${RS}"
 	fi
-
-	# Create service user
-	id -u "pi-finder" &>/dev/null || useradd -r -s /bin/false pi-finder
 
 	echo
 	echo -e "${FBLE}Before you continue, change the name attribute in the config!${RS}"
