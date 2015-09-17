@@ -40,7 +40,7 @@ To test the configuration, restart your Pi and check the [Pi Finder](https://pi.
 $ sudo reboot
 ```
 
-## Usage
+## Usage Linux
 
 #### Start Pi Finder
 ```bash
@@ -61,3 +61,28 @@ $ sudo service pi-finder restart
 ```bash
 $ sudo service pi-finder status 
 ```
+
+
+## Usage OS X
+
+#### Start Pi Finder
+```bash
+$ sudo launchctl load /Library/LaunchDaemons/ch.strebl.pi-finder.plist
+```
+
+#### Stop Pi Finder
+```bash
+$ sudo launchctl unload /Library/LaunchDaemons/ch.strebl.pi-finder.plist
+```
+
+#### Stop Pi Finder
+```bash
+$ sudo launchctl unload /Library/LaunchDaemons/ch.strebl.pi-finder.plist
+$ sudo launchctl load /Library/LaunchDaemons/ch.strebl.pi-finder.plist
+```
+
+#### Stop Pi Finder
+```bash
+$ sudo launchctl list | grep ch.strebl.pi-finder 
+```
+If you see any output, the pi finder is running

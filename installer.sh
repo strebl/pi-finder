@@ -50,17 +50,25 @@
 	nodejsdir=$(npm config get prefix)
 	packagepath="$nodejsdir/lib/node_modules/pi-finder"
 
-	# Move to init.d
-	echo "Moving init script"
-	mv $packagepath/init/pi-finder /etc/init.d/
+	if [ "$(uname | grep -i 'Darwin')" ]; then
+		echo "Moving launchd file"
+		mv $packagepath/init/pi-finder.osx /Library/LaunchDaemons/ch.strebl.pi-finder.plist
+	elif [ "$(uname | grep -i 'Linux')" ]; then
+		# Move to init.d
+		echo "Moving init script"
+		mv $packagepath/init/pi-finder /etc/init.d/
 
-	# Change permissions
-	echo "Chaning init script permissions"
-	chmod 755 /etc/init.d/pi-finder
+		# Change permissions
+		echo "Chaning init script permissions"
+		chmod 755 /etc/init.d/pi-finder
 
-	# Update rc.d
-	echo "Updating rc.d"
-	update-rc.d pi-finder defaults
+		# Update rc.d
+		echo "Updating rc.d"
+		update-rc.d pi-finder defaults
+	else
+		echo -e "${FGRD}Your OS is not supported.${RS}"
+		echo -e "${FGRD}Please create a new issue: https://github.com/strebl/pi-finder/issues${RS}"
+	fi
 
 	# Create service user
 	id -u "pi-finder" &>/dev/null || useradd -r -s /bin/false pi-finder
