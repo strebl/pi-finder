@@ -17,7 +17,7 @@
 	#########################
 	# Check for root rights #
 	#########################
-	if [[ $EUID -ne 0 ]]; then
+	if [ $EUID -ne 0 ]; then
 		echo -e "${FGRD}The pi-finder installer must be run as root!${RS}" 1>&2
 		exit 1
 	fi
