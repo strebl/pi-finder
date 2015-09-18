@@ -49,7 +49,7 @@
 
 	# Get the paths
 	nodejsdir=$(npm config get prefix)
-	packagepath="$nodejsdir/lib/node_modules/pi-finder"
+	packagepath="${nodejsdir}/lib/node_modules/pi-finder"
 
 	if [ "$(uname | grep -i 'Darwin')" ]; then
 		echo "Moving launchd file"
@@ -57,7 +57,7 @@
 	elif [ "$(uname | grep -i 'Linux')" ]; then
 		# Move to init.d
 		echo "Moving init script"
-		mv $packagepath/init/pi-finder /etc/init.d/
+		mv ${packagepath}/init/pi-finder /etc/init.d/
 
 		# Change permissions
 		echo "Chaning init script permissions"
