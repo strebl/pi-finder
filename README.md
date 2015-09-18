@@ -10,7 +10,7 @@ This is a little helper to find your Raspberry Pi in a DHCP network.
 
 #### 1. Run the installer
 ```bash
-$ wget http://bit.ly/pi-finder_installer -O - | sudo sh
+$ wget http://bit.ly/pi-finder_installer -O - | sudo bash
 ```
 
 #### 2. Configure
