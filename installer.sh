@@ -10,9 +10,9 @@
 	# Declare colors #
 	##################
 	RS="\033[0m"		# reset
-	FGRD="\033[01;31m"	# foreground red
-	FGRN="\033[01;32m"	# foreground green
-	FBLE="\033[01;34m"	# foreground blue
+	FGRD="\033[31m"		# foreground red
+	FGRN="\033[32m"		# foreground green
+	FBLE="\033[34m"		# foreground blue
 
 	#########################
 	# Check for root rights #
