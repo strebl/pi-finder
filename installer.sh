@@ -74,8 +74,8 @@
 		echo -e "${FGRD}Please create a new issue: https://github.com/strebl/pi-finder/issues${RS}"
 	fi
 
-	echo
+	echo ""
 	echo -e "${FBLE}Before you continue, change the name attribute in the config!${RS}"
 	echo -e "${FGRN}Run sudo nano $packagepath/config.js${RS}"
-	echo
+	echo ""
 }
