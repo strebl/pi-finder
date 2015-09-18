@@ -13,6 +13,12 @@ This is a little helper to find your Raspberry Pi in a DHCP network.
 $ wget http://bit.ly/pi-finder_installer -O - | sudo bash
 ```
 
+##### Run this command only if the first failed!
+If you haven't `wget` installed, try the curl command:
+```bash
+$ curl -fsSL http://bit.ly/pi-finder_installer | sudo bash
+```
+
 #### 2. Configure
 Open the configuration file `config.js`...
 ```bash
