@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 {
 	# Use the form until the main repo fixed issue #3
