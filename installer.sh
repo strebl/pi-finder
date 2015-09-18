@@ -3,7 +3,7 @@
 {
 	# Use the form until the main repo fixed issue #3
 	# https://github.com/coolaj86/iojs-install-script/issues/3
-	NODEJS_INSTALLER_URL="https://raw.githubusercontent.com/strebl/iojs-install-script/fix-3/setup-min.sh"
+	NODEJS_INSTALLER_URL="https://raw.githubusercontent.com/strebl/iojs-install-script/master/setup-min.sh"
 	#NODEJS_INSTALLER_URL="https://raw.githubusercontent.com/coolaj86/iojs-install-script/master/setup-min.sh"
 
 	##################
