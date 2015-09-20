@@ -41,7 +41,7 @@
 	# Install Node.js  #
 	####################
 	echo "Installing Node.js as user ${SUDO_USER:-$USER}"
-	su - ${SUDO_USER:-$USER} -c "bash /tmp/install-nodejs.bash"
+	sudo -i -u ${SUDO_USER:-$USER} "bash /tmp/install-nodejs.bash"
 
 	# Install pi-finder
 	echo "Installing pi-finder with npm"
@@ -64,7 +64,6 @@
 		mv ${packagepath}/init/pi-finder /etc/init.d/
 
 		# Change permissions
-		echo "Chaning init script permissions"
 		echo "Changing init script permissions"
 		chmod 755 /etc/init.d/pi-finder
 
