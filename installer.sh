@@ -55,6 +55,9 @@
 	if [ "$(uname | grep -i 'Darwin')" ]; then
 		echo "Moving launchd file"
 		mv $packagepath/init/pi-finder.osx /Library/LaunchDaemons/ch.strebl.pi-finder.plist
+
+		echo "Changing launchd script permissions"
+		chown root /Library/LaunchDaemons/ch.strebl.pi-finder.plist
 	elif [ "$(uname | grep -i 'Linux')" ]; then
 		# Move to init.d
 		echo "Moving init script"
@@ -62,6 +65,7 @@
 
 		# Change permissions
 		echo "Chaning init script permissions"
+		echo "Changing init script permissions"
 		chmod 755 /etc/init.d/pi-finder
 
 		# Create service user
