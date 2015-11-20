@@ -41,7 +41,7 @@
 	# Install Node.js  #
 	####################
 	echo "Installing Node.js as user ${SUDO_USER:-$USER}"
-	sudo -i -u ${SUDO_USER:-$USER} "bash /tmp/install-nodejs.bash"
+	sudo -i -u ${SUDO_USER:-$USER} bash /tmp/install-nodejs.bash
 
 	# Install pi-finder
 	echo "Installing pi-finder with npm"
