@@ -87,7 +87,7 @@ $ sudo launchctl unload /Library/LaunchDaemons/ch.strebl.pi-finder.plist
 $ sudo launchctl load /Library/LaunchDaemons/ch.strebl.pi-finder.plist
 ```
 
-#### Stop Pi Finder
+#### Status if the Pi Finder
 ```bash
 $ sudo launchctl list | grep ch.strebl.pi-finder 
 ```
