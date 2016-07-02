@@ -1,10 +1,7 @@
 #!/bin/bash
 
 {
-	# Use the form until the main repo fixed issue #3
-	# https://github.com/coolaj86/iojs-install-script/issues/3
-	NODEJS_INSTALLER_URL="https://raw.githubusercontent.com/strebl/iojs-install-script/master/setup-min.sh"
-	#NODEJS_INSTALLER_URL="https://raw.githubusercontent.com/coolaj86/iojs-install-script/master/setup-min.sh"
+	NODEJS_INSTALLER_URL="https://raw.githubusercontent.com/coolaj86/node-install-script/master/setup-min.sh"
 
 	##################
 	# Declare colors #
@@ -46,7 +43,6 @@
 	# Install pi-finder
 	echo "Installing pi-finder with npm"
 	npm install -g pi-finder
-	#npm install -g https://github.com/strebl/pi-finder/tarball/installer-v2
 
 	# Get the paths
 	nodejsdir=$(npm config get prefix)
