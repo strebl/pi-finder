@@ -35,6 +35,13 @@
 	fi
 
 	####################
+	# Installing rsync #
+	####################
+	if [ -n "$(which rsync)" ]; then
+		apt-get install rsync
+	fi
+
+	####################
 	# Install Node.js  #
 	####################
 	echo "Installing Node.js as user ${SUDO_USER:-$USER}"
