@@ -37,8 +37,9 @@
 	####################
 	# Installing rsync #
 	####################
-	if [ -n "$(which rsync)" ]; then
-		apt-get install rsync
+	if ! hash rsync 2>/dev/null; then
+	    echo "rsync missing, installing now"
+	    apt-get install rsync
 	fi
 
 	####################
