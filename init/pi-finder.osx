@@ -3,7 +3,7 @@
 <plist version="1.0">
     <dict>
         <key>Label</key>
-        <string>ch.strebl.pi-finder</string>
+        <string>xyz.pi-finder</string>
         <key>ProgramArguments</key>
         <array>
             <string>/usr/local/bin/node</string>
