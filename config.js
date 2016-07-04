@@ -49,9 +49,9 @@ module.exports = {
 	 * Diesem Host wird die aktuelle IP mitgeteilt.
 	 * Muss nur geaendert werden wenn du deinen eigenen Server verwendest.
 	 *
-	 * default: https://pi.strebl.ch
+	 * default: https://pi-finder.xyz
 	 */
-	pokeServer: "https://pi.strebl.ch",
+	pokeServer: "https://pi-finder.xyz",
 
 	/*
 	 * Poke Pfad

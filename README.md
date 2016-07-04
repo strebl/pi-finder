@@ -1,5 +1,5 @@
 # Pi Finder [![Dependency Status](https://img.shields.io/david/strebl/pi-finder.svg?style=flat-square)](https://david-dm.org/strebl/pi-finder)
-[![Pi Finder Overview](http://i.imgur.com/h9QasUC.png)](https://pi.strebl.ch "Visit the Pi Finder Website!")
+[![Pi Finder Overview](http://i.imgur.com/h9QasUC.png)](https://pi-finder.xyz "Visit the Pi Finder Website!")
 
 ## Description
 
@@ -41,7 +41,7 @@ $ sudo service pi-finder start
 ```
 
 #### 4. Reboot (optional)
-To test the configuration, restart your Pi and check the [Pi Finder](https://pi.strebl.ch)!
+To test the configuration, restart your Pi and check the [Pi Finder](https://pi-finder.xyz)!
 ```bash
 $ sudo reboot
 ```
@@ -73,6 +73,30 @@ $ sudo service pi-finder status
 
 #### Start Pi Finder
 ```bash
+$ sudo launchctl load /Library/LaunchDaemons/xyz.pi-finder.plist
+```
+
+#### Stop Pi Finder
+```bash
+$ sudo launchctl unload /Library/LaunchDaemons/xyz.pi-finder.plist
+```
+
+#### Stop Pi Finder
+```bash
+$ sudo launchctl unload /Library/LaunchDaemons/xyz.pi-finder.plist
+$ sudo launchctl load /Library/LaunchDaemons/xyz.pi-finder.plist
+```
+
+#### Status of the Pi Finder
+```bash
+$ sudo launchctl list | grep xyz.pi-finder 
+```
+If you see any output, the pi finder is running
+
+### If you are using an old Pi Finder installation on OS X
+
+#### Start Pi Finder
+```bash
 $ sudo launchctl load /Library/LaunchDaemons/ch.strebl.pi-finder.plist
 ```
 
@@ -87,7 +111,7 @@ $ sudo launchctl unload /Library/LaunchDaemons/ch.strebl.pi-finder.plist
 $ sudo launchctl load /Library/LaunchDaemons/ch.strebl.pi-finder.plist
 ```
 
-#### Status if the Pi Finder
+#### Status of the Pi Finder
 ```bash
 $ sudo launchctl list | grep ch.strebl.pi-finder 
 ```
