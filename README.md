@@ -50,22 +50,22 @@ $ sudo reboot
 
 #### Start Pi Finder
 ```bash
-$ sudo service pi-finder start 
+$ sudo service pi-finder start
 ```
 
 #### Stop Pi Finder
 ```bash
-$ sudo service pi-finder stop 
+$ sudo service pi-finder stop
 ```
 
 #### Restart Pi Finder
 ```bash
-$ sudo service pi-finder restart 
+$ sudo service pi-finder restart
 ```
 
 #### Status of the Pi Finder
 ```bash
-$ sudo service pi-finder status 
+$ sudo service pi-finder status
 ```
 
 
@@ -81,7 +81,7 @@ $ sudo launchctl load /Library/LaunchDaemons/xyz.pi-finder.plist
 $ sudo launchctl unload /Library/LaunchDaemons/xyz.pi-finder.plist
 ```
 
-#### Stop Pi Finder
+#### Restart Pi Finder
 ```bash
 $ sudo launchctl unload /Library/LaunchDaemons/xyz.pi-finder.plist
 $ sudo launchctl load /Library/LaunchDaemons/xyz.pi-finder.plist
@@ -89,7 +89,7 @@ $ sudo launchctl load /Library/LaunchDaemons/xyz.pi-finder.plist
 
 #### Status of the Pi Finder
 ```bash
-$ sudo launchctl list | grep xyz.pi-finder 
+$ sudo launchctl list | grep xyz.pi-finder
 ```
 If you see any output, the pi finder is running
 
@@ -105,7 +105,7 @@ $ sudo launchctl load /Library/LaunchDaemons/ch.strebl.pi-finder.plist
 $ sudo launchctl unload /Library/LaunchDaemons/ch.strebl.pi-finder.plist
 ```
 
-#### Stop Pi Finder
+#### Restart Pi Finder
 ```bash
 $ sudo launchctl unload /Library/LaunchDaemons/ch.strebl.pi-finder.plist
 $ sudo launchctl load /Library/LaunchDaemons/ch.strebl.pi-finder.plist
@@ -113,6 +113,6 @@ $ sudo launchctl load /Library/LaunchDaemons/ch.strebl.pi-finder.plist
 
 #### Status of the Pi Finder
 ```bash
-$ sudo launchctl list | grep ch.strebl.pi-finder 
+$ sudo launchctl list | grep ch.strebl.pi-finder
 ```
 If you see any output, the pi finder is running
