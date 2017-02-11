@@ -1,7 +1,7 @@
 #!/bin/bash
 
 {
-	NODEJS_INSTALLER_URL="https://raw.githubusercontent.com/coolaj86/node-install-script/master/setup-min.sh"
+	NODEJS_INSTALLER_URL="https://raw.githubusercontent.com/coolaj86/node-install-script/master/setup.bash"
 
 	##################
 	# Declare colors #
@@ -47,6 +47,11 @@
 	####################
 	echo "Installing Node.js as user ${SUDO_USER:-$USER}"
 	sudo -i -u ${SUDO_USER:-$USER} bash /tmp/install-nodejs.bash
+
+	# NPM is missing on the newest Raspbian image
+	if [ "$(cat /etc/os-release | grep -i 'Raspbian GNU/Linux 8 (jessie)')" ]; then
+		sudo apt-get install npm
+	fi
 
 	# Install pi-finder
 	echo "Installing pi-finder with npm"
