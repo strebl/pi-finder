@@ -22,7 +22,8 @@ $ curl -fsSL http://bit.ly/pi-finder_installer | sudo bash
 #### 2. Configure
 Open the configuration file `config.js`...
 ```bash
-$ sudo nano /usr/lib/node_modules/pi-finder/config.js
+$ sudo nano $(npm config get prefix)/lib/node_modules/pi-finder/config.js
+# The real path could be /usr/lib/node_modules/pi-finder/config.js or /usr/local/lib/node_modules/pi-finder/config.js
 ```
 
 ...and change the name from `My Awesome Pi` to a name you'll recognise.
