@@ -1,7 +1,7 @@
 #!/bin/bash
 
 {
-	NODEJS_INSTALLER_URL="https://raw.githubusercontent.com/coolaj86/node-install-script/master/setup-min.sh"
+	NODEJS_INSTALLER_URL="https://raw.githubusercontent.com/strebl/node-install-script/master/setup-min.sh"
 
 	##################
 	# Declare colors #
