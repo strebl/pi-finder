@@ -13,11 +13,11 @@ module.exports = {
 	name: "My Awesome Pi",
 
 	/*
-	 * Standardmaessig wird dein Raspberry auf der Startseite des Pi Finders (pi.strebl.ch)
+	 * Standardmaessig wird dein Raspberry auf der Startseite des Pi Finders (pi-finder.xyz)
 	 * angezeit. Hast du jedoch mehrere Raspberrys und moechtest diese gruppieren? 
 	 * Oder hast moechtest du nicht das dein Pi auf der Startseite vertreten ist?
 	 * Dann kannst du hier einen Gruppennamen wie '14B' oder 'Strebel' definieren.
-	 * Die Gruppe findest du dann unter pi.strebl.ch/@<group>. z.B: pi.strebl.ch/@14B
+	 * Die Gruppe findest du dann unter pi-finder.xyz/@<group>. z.B: pi-finder.xyz/@14B
 	 *
 	 * Moegliche Werte:
 	 * 'string'
@@ -33,7 +33,7 @@ module.exports = {
 	//group: 'my-group',
 
 	/*
-	 * Soll das Raspberry Pi auf der Uebersicht, also auf der Homepage (pi.strebl.ch) sichbar sein?
+	 * Soll das Raspberry Pi auf der Uebersicht, also auf der Homepage (pi-finder.xyz) sichbar sein?
 	 * 
 	 * Moegliche Werte: true, false oder 'auto'
 	 * false: Immer sichtbar
